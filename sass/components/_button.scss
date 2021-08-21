@@ -1,0 +1,84 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.2rem 3.5rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: $defult-font-size;
+    top:10%;
+
+    border: none;
+    cursor: pointer;
+    
+    }
+    &:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($black-color,.5);
+    &::after{
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+}
+    &:active
+    &:focus{
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba($black-color,.5);
+}
+    &-white{
+    background-color:$main-color;
+    color: $second-color;
+    &::after{
+        background-color: $main-color;
+    }
+}
+&--green{
+    background-color:$Purple-color;
+    color: $main-color;
+    &::after{
+        background-color: $Purple-color;
+    }
+    &:hover{
+        color: $main-color;
+    }
+}
+    &::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+}
+.btn-text{
+    &:link,
+    &:visited{
+        font-size:$defult-font-size;
+        color: $pink-color;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $pink-color;
+        padding: 3px;
+        transition: all .2s;
+    }
+    &:hover{
+        background-color: $Purple-color;
+        color: $main-color;
+        box-shadow: 0 1rem 2rem rgba($black-color, 0.15);
+        transform: translateY(-2px);
+    }
+    &:active{
+        box-shadow: 0 5rem 1rem rgba($black-color, 0.15);
+        transform: translateY(0);
+    }
+}

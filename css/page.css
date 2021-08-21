@@ -1,0 +1,27 @@
+.option-box{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 9999;
+}
+.option-box .color-option{
+    float: left;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #333;
+}
+.option-box .color-option ul li{
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    display: inline-block;
+    margin-right: 3px;
+}
+.option-box .gear-check{
+    padding: 5px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+}
